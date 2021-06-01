@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "TongViewController.h"
 #import "TongBasisViewController.h"
+#import "TongJumpingViewController.h"
 
 @interface ViewController ()
 
@@ -24,7 +25,8 @@
 }
 
 - (void)pushTongViewController{
-    [self.navigationController pushViewController:[TongBasisViewController new] animated:YES];
+    [self.navigationController pushViewController:[TongJumpingViewController new] animated:YES];
+//    [self.navigationController pushViewController:[TongBasisViewController new] animated:YES];
 //    [self.navigationController pushViewController:[TongViewController new] animated:YES];
 }
 

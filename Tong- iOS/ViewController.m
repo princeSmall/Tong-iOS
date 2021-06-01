@@ -6,15 +6,11 @@
 //
 
 #import "ViewController.h"
-#import "TongStudent.h"
-#import "TongStudent+TongExtension.h"
-#import "TongStudent+TongHigh.h"
-#import "TongProtocol.h"
+#import "TongViewController.h"
+#import "TongBasisViewController.h"
 
+@interface ViewController ()
 
-@interface ViewController ()<TongProtocol>
-
-@property (nonatomic, strong)TongStudent *student;
 
 @end
 
@@ -22,59 +18,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@",[self getStudentName]);
-    
-    NSLog(@"%@",[self getStudentAddress]);
-    
-    NSLog(@"%ld", [self.student getStudentSeatNumber:@"Tong"]);
-    
+    UIBarButtonItem *barButton = [[UIBarButtonItem alloc]initWithTitle:@"Tong" style:UIBarButtonItemStyleDone target:self action:@selector(pushTongViewController)];
+    self.navigationItem.rightBarButtonItem = barButton;
     // Do any additional setup after loading the view.
 }
 
-// category
-- (NSString *)getStudentName{
-    self.student.name = @"Tong";
-    [self.student gotoHightSchoolEveryData];
-    return self.student.name;
+- (void)pushTongViewController{
+    [self.navigationController pushViewController:[TongBasisViewController new] animated:YES];
+//    [self.navigationController pushViewController:[TongViewController new] animated:YES];
 }
 
-/** extension
- 声明私有属性
- 声明私有方法
- 声明私有成员变量
- */
 
-- (NSString *)getStudentAddress{
-    self.student.address = @"suzhou";
-    [self.student gotoSchoolEveryDay];
-    return self.student.address;
-}
 
-- (TongStudent *)student{
-    if (!_student) {
-        _student = [[TongStudent alloc]init];
-        _student.delegate = self;
-    }
-    return _student;
-}
-
-/**protocol
- 
- */
-
-//optional
-- (NSInteger)getStudentSeatNumber:(NSString *)name{
-    if ([name isEqualToString:@"Tong"]) {
-        return 110;
-    }else{
-        return 1;
-    }
-}
-
-//require
-- (NSInteger)getStudentCode{
-    return 100;
-}
 
 
 @end

@@ -16,6 +16,12 @@
 		5D5D4AFC2664C6AE005B5D23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4AFB2664C6AE005B5D23 /* main.m */; };
 		5D5D4B062664CEE3005B5D23 /* TongStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B052664CEE2005B5D23 /* TongStudent.m */; };
 		5D5D4B092664CF28005B5D23 /* TongStudent+TongHigh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B082664CF28005B5D23 /* TongStudent+TongHigh.m */; };
+		5D5D4B132665D285005B5D23 /* TongBasisManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B122665D285005B5D23 /* TongBasisManager.m */; };
+		5D5D4B172665E0C8005B5D23 /* TongNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B152665D76F005B5D23 /* TongNotificationCenter.m */; };
+		5D5D4B1A2665FDD5005B5D23 /* TongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B192665FDD5005B5D23 /* TongViewController.m */; };
+		5D5D4B1D2666004C005B5D23 /* TongBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B1C2666004C005B5D23 /* TongBlock.m */; };
+		5D5D4B202666042A005B5D23 /* TongBasisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B1F2666042A005B5D23 /* TongBasisViewController.m */; };
+		5D5D4B2526663014005B5D23 /* TongKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B2426663014005B5D23 /* TongKVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,18 @@
 		5D5D4B082664CF28005B5D23 /* TongStudent+TongHigh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TongStudent+TongHigh.m"; sourceTree = "<group>"; };
 		5D5D4B0B2664D191005B5D23 /* TongStudent+TongExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TongStudent+TongExtension.h"; sourceTree = "<group>"; };
 		5D5D4B0D2664D7E3005B5D23 /* TongProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongProtocol.h; sourceTree = "<group>"; };
+		5D5D4B112665D285005B5D23 /* TongBasisManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongBasisManager.h; sourceTree = "<group>"; };
+		5D5D4B122665D285005B5D23 /* TongBasisManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongBasisManager.m; sourceTree = "<group>"; };
+		5D5D4B142665D76F005B5D23 /* TongNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongNotificationCenter.h; sourceTree = "<group>"; };
+		5D5D4B152665D76F005B5D23 /* TongNotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TongNotificationCenter.m; sourceTree = "<group>"; };
+		5D5D4B182665FDD5005B5D23 /* TongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongViewController.h; sourceTree = "<group>"; };
+		5D5D4B192665FDD5005B5D23 /* TongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongViewController.m; sourceTree = "<group>"; };
+		5D5D4B1B2666004C005B5D23 /* TongBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongBlock.h; sourceTree = "<group>"; };
+		5D5D4B1C2666004C005B5D23 /* TongBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongBlock.m; sourceTree = "<group>"; };
+		5D5D4B1E2666042A005B5D23 /* TongBasisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongBasisViewController.h; sourceTree = "<group>"; };
+		5D5D4B1F2666042A005B5D23 /* TongBasisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongBasisViewController.m; sourceTree = "<group>"; };
+		5D5D4B2326663014005B5D23 /* TongKVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongKVC.h; sourceTree = "<group>"; };
+		5D5D4B2426663014005B5D23 /* TongKVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongKVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +87,15 @@
 		5D5D4AE82664C6AA005B5D23 /* Tong- iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5D5D4B0C2664D7C9005B5D23 /* protocol */,
-				5D5D4B032664C94D005B5D23 /* extension */,
-				5D5D4B022664C93F005B5D23 /* category */,
+				5D5D4B102665D246005B5D23 /* Basis */,
 				5D5D4AE92664C6AA005B5D23 /* AppDelegate.h */,
 				5D5D4AEA2664C6AA005B5D23 /* AppDelegate.m */,
 				5D5D4AEC2664C6AA005B5D23 /* SceneDelegate.h */,
 				5D5D4AED2664C6AA005B5D23 /* SceneDelegate.m */,
 				5D5D4AEF2664C6AA005B5D23 /* ViewController.h */,
 				5D5D4AF02664C6AA005B5D23 /* ViewController.m */,
+				5D5D4B182665FDD5005B5D23 /* TongViewController.h */,
+				5D5D4B192665FDD5005B5D23 /* TongViewController.m */,
 				5D5D4AF22664C6AA005B5D23 /* Main.storyboard */,
 				5D5D4AF52664C6AE005B5D23 /* Assets.xcassets */,
 				5D5D4AF72664C6AE005B5D23 /* LaunchScreen.storyboard */,
@@ -113,6 +131,58 @@
 				5D5D4B0D2664D7E3005B5D23 /* TongProtocol.h */,
 			);
 			path = protocol;
+			sourceTree = "<group>";
+		};
+		5D5D4B0E2665D1AC005B5D23 /* 通知 */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D4B142665D76F005B5D23 /* TongNotificationCenter.h */,
+				5D5D4B152665D76F005B5D23 /* TongNotificationCenter.m */,
+			);
+			path = "通知";
+			sourceTree = "<group>";
+		};
+		5D5D4B0F2665D1C2005B5D23 /* block */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D4B1B2666004C005B5D23 /* TongBlock.h */,
+				5D5D4B1C2666004C005B5D23 /* TongBlock.m */,
+			);
+			path = block;
+			sourceTree = "<group>";
+		};
+		5D5D4B102665D246005B5D23 /* Basis */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D4B1E2666042A005B5D23 /* TongBasisViewController.h */,
+				5D5D4B1F2666042A005B5D23 /* TongBasisViewController.m */,
+				5D5D4B112665D285005B5D23 /* TongBasisManager.h */,
+				5D5D4B122665D285005B5D23 /* TongBasisManager.m */,
+				5D5D4B2226662FD5005B5D23 /* KVO */,
+				5D5D4B2126662FCA005B5D23 /* KVC */,
+				5D5D4B0F2665D1C2005B5D23 /* block */,
+				5D5D4B0E2665D1AC005B5D23 /* 通知 */,
+				5D5D4B0C2664D7C9005B5D23 /* protocol */,
+				5D5D4B032664C94D005B5D23 /* extension */,
+				5D5D4B022664C93F005B5D23 /* category */,
+			);
+			path = Basis;
+			sourceTree = "<group>";
+		};
+		5D5D4B2126662FCA005B5D23 /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D4B2326663014005B5D23 /* TongKVC.h */,
+				5D5D4B2426663014005B5D23 /* TongKVC.m */,
+			);
+			path = KVC;
+			sourceTree = "<group>";
+		};
+		5D5D4B2226662FD5005B5D23 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KVO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,12 +255,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D5D4B2526663014005B5D23 /* TongKVC.m in Sources */,
 				5D5D4AF12664C6AA005B5D23 /* ViewController.m in Sources */,
+				5D5D4B1D2666004C005B5D23 /* TongBlock.m in Sources */,
+				5D5D4B1A2665FDD5005B5D23 /* TongViewController.m in Sources */,
 				5D5D4B092664CF28005B5D23 /* TongStudent+TongHigh.m in Sources */,
 				5D5D4AEB2664C6AA005B5D23 /* AppDelegate.m in Sources */,
+				5D5D4B172665E0C8005B5D23 /* TongNotificationCenter.m in Sources */,
 				5D5D4B062664CEE3005B5D23 /* TongStudent.m in Sources */,
 				5D5D4AFC2664C6AE005B5D23 /* main.m in Sources */,
+				5D5D4B132665D285005B5D23 /* TongBasisManager.m in Sources */,
 				5D5D4AEE2664C6AA005B5D23 /* SceneDelegate.m in Sources */,
+				5D5D4B202666042A005B5D23 /* TongBasisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

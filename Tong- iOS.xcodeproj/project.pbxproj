@@ -14,11 +14,13 @@
 		5D5D4AF62664C6AE005B5D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D5D4AF52664C6AE005B5D23 /* Assets.xcassets */; };
 		5D5D4AF92664C6AE005B5D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5D4AF72664C6AE005B5D23 /* LaunchScreen.storyboard */; };
 		5D5D4AFC2664C6AE005B5D23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4AFB2664C6AE005B5D23 /* main.m */; };
+		5D5D4B062664CEE3005B5D23 /* TongStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B052664CEE2005B5D23 /* TongStudent.m */; };
+		5D5D4B092664CF28005B5D23 /* TongStudent+TongHigh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B082664CF28005B5D23 /* TongStudent+TongHigh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D5D4AE62664C6AA005B5D23 /* Tong- iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tong- iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D5D4AE92664C6AA005B5D23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5D5D4AE92664C6AA005B5D23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; usesTabs = 0; };
 		5D5D4AEA2664C6AA005B5D23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5D5D4AEC2664C6AA005B5D23 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		5D5D4AED2664C6AA005B5D23 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,12 @@
 		5D5D4AF82664C6AE005B5D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D5D4AFA2664C6AE005B5D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D5D4AFB2664C6AE005B5D23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D5D4B042664CEE2005B5D23 /* TongStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongStudent.h; sourceTree = "<group>"; };
+		5D5D4B052664CEE2005B5D23 /* TongStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongStudent.m; sourceTree = "<group>"; };
+		5D5D4B072664CF28005B5D23 /* TongStudent+TongHigh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TongStudent+TongHigh.h"; sourceTree = "<group>"; };
+		5D5D4B082664CF28005B5D23 /* TongStudent+TongHigh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TongStudent+TongHigh.m"; sourceTree = "<group>"; };
+		5D5D4B0B2664D191005B5D23 /* TongStudent+TongExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TongStudent+TongExtension.h"; sourceTree = "<group>"; };
+		5D5D4B0D2664D7E3005B5D23 /* TongProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,9 @@
 		5D5D4AE82664C6AA005B5D23 /* Tong- iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5D5D4B0C2664D7C9005B5D23 /* protocol */,
+				5D5D4B032664C94D005B5D23 /* extension */,
+				5D5D4B022664C93F005B5D23 /* category */,
 				5D5D4AE92664C6AA005B5D23 /* AppDelegate.h */,
 				5D5D4AEA2664C6AA005B5D23 /* AppDelegate.m */,
 				5D5D4AEC2664C6AA005B5D23 /* SceneDelegate.h */,
@@ -74,6 +85,34 @@
 				5D5D4AFB2664C6AE005B5D23 /* main.m */,
 			);
 			path = "Tong- iOS";
+			sourceTree = "<group>";
+		};
+		5D5D4B022664C93F005B5D23 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D4B042664CEE2005B5D23 /* TongStudent.h */,
+				5D5D4B052664CEE2005B5D23 /* TongStudent.m */,
+				5D5D4B072664CF28005B5D23 /* TongStudent+TongHigh.h */,
+				5D5D4B082664CF28005B5D23 /* TongStudent+TongHigh.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		5D5D4B032664C94D005B5D23 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D4B0B2664D191005B5D23 /* TongStudent+TongExtension.h */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		5D5D4B0C2664D7C9005B5D23 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5D5D4B0D2664D7E3005B5D23 /* TongProtocol.h */,
+			);
+			path = protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +141,7 @@
 		5D5D4ADE2664C6AA005B5D23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = Tong;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					5D5D4AE52664C6AA005B5D23 = {
@@ -146,7 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D5D4AF12664C6AA005B5D23 /* ViewController.m in Sources */,
+				5D5D4B092664CF28005B5D23 /* TongStudent+TongHigh.m in Sources */,
 				5D5D4AEB2664C6AA005B5D23 /* AppDelegate.m in Sources */,
+				5D5D4B062664CEE3005B5D23 /* TongStudent.m in Sources */,
 				5D5D4AFC2664C6AE005B5D23 /* main.m in Sources */,
 				5D5D4AEE2664C6AA005B5D23 /* SceneDelegate.m in Sources */,
 			);

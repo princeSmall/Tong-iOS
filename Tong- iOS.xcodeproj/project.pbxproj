@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1579612666730B00DC041D /* TongJumpingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1579602666730B00DC041D /* TongJumpingViewController.m */; };
+		0A1579662666744400DC041D /* TongJumpingToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1579652666744400DC041D /* TongJumpingToViewController.m */; };
+		0A15796B2666760400DC041D /* TongProtocolJumping.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A15796A2666760400DC041D /* TongProtocolJumping.m */; };
+		0A15796F2666761300DC041D /* TongTargetJumping.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A15796E2666761300DC041D /* TongTargetJumping.m */; };
+		0A1579732666762000DC041D /* TongUrlJumping.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1579722666762000DC041D /* TongUrlJumping.m */; };
 		5D5D4AEB2664C6AA005B5D23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4AEA2664C6AA005B5D23 /* AppDelegate.m */; };
 		5D5D4AEE2664C6AA005B5D23 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4AED2664C6AA005B5D23 /* SceneDelegate.m */; };
 		5D5D4AF12664C6AA005B5D23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4AF02664C6AA005B5D23 /* ViewController.m */; };
@@ -25,6 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A15795F2666730B00DC041D /* TongJumpingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongJumpingViewController.h; sourceTree = "<group>"; };
+		0A1579602666730B00DC041D /* TongJumpingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongJumpingViewController.m; sourceTree = "<group>"; };
+		0A1579642666744400DC041D /* TongJumpingToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongJumpingToViewController.h; sourceTree = "<group>"; };
+		0A1579652666744400DC041D /* TongJumpingToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongJumpingToViewController.m; sourceTree = "<group>"; };
+		0A1579692666760400DC041D /* TongProtocolJumping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongProtocolJumping.h; sourceTree = "<group>"; };
+		0A15796A2666760400DC041D /* TongProtocolJumping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongProtocolJumping.m; sourceTree = "<group>"; };
+		0A15796D2666761300DC041D /* TongTargetJumping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongTargetJumping.h; sourceTree = "<group>"; };
+		0A15796E2666761300DC041D /* TongTargetJumping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongTargetJumping.m; sourceTree = "<group>"; };
+		0A1579712666762000DC041D /* TongUrlJumping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongUrlJumping.h; sourceTree = "<group>"; };
+		0A1579722666762000DC041D /* TongUrlJumping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongUrlJumping.m; sourceTree = "<group>"; };
 		5D5D4AE62664C6AA005B5D23 /* Tong- iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tong- iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5D4AE92664C6AA005B5D23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; usesTabs = 0; };
 		5D5D4AEA2664C6AA005B5D23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +83,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A15795B2666724200DC041D /* Jumping */ = {
+			isa = PBXGroup;
+			children = (
+				0A15795F2666730B00DC041D /* TongJumpingViewController.h */,
+				0A1579602666730B00DC041D /* TongJumpingViewController.m */,
+				0A1579642666744400DC041D /* TongJumpingToViewController.h */,
+				0A1579652666744400DC041D /* TongJumpingToViewController.m */,
+				0A15795E266672D300DC041D /* protocol_jumping */,
+				0A15795D266672C300DC041D /* target_jumping */,
+				0A15795C266672A100DC041D /* url_jumping */,
+			);
+			path = Jumping;
+			sourceTree = "<group>";
+		};
+		0A15795C266672A100DC041D /* url_jumping */ = {
+			isa = PBXGroup;
+			children = (
+				0A1579712666762000DC041D /* TongUrlJumping.h */,
+				0A1579722666762000DC041D /* TongUrlJumping.m */,
+			);
+			path = url_jumping;
+			sourceTree = "<group>";
+		};
+		0A15795D266672C300DC041D /* target_jumping */ = {
+			isa = PBXGroup;
+			children = (
+				0A15796D2666761300DC041D /* TongTargetJumping.h */,
+				0A15796E2666761300DC041D /* TongTargetJumping.m */,
+			);
+			path = target_jumping;
+			sourceTree = "<group>";
+		};
+		0A15795E266672D300DC041D /* protocol_jumping */ = {
+			isa = PBXGroup;
+			children = (
+				0A1579692666760400DC041D /* TongProtocolJumping.h */,
+				0A15796A2666760400DC041D /* TongProtocolJumping.m */,
+			);
+			path = protocol_jumping;
+			sourceTree = "<group>";
+		};
 		5D5D4ADD2664C6AA005B5D23 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +143,7 @@
 		5D5D4AE82664C6AA005B5D23 /* Tong- iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0A15795B2666724200DC041D /* Jumping */,
 				5D5D4B102665D246005B5D23 /* Basis */,
 				5D5D4AE92664C6AA005B5D23 /* AppDelegate.h */,
 				5D5D4AEA2664C6AA005B5D23 /* AppDelegate.m */,
@@ -261,9 +318,14 @@
 				5D5D4B1A2665FDD5005B5D23 /* TongViewController.m in Sources */,
 				5D5D4B092664CF28005B5D23 /* TongStudent+TongHigh.m in Sources */,
 				5D5D4AEB2664C6AA005B5D23 /* AppDelegate.m in Sources */,
+				0A1579732666762000DC041D /* TongUrlJumping.m in Sources */,
+				0A1579662666744400DC041D /* TongJumpingToViewController.m in Sources */,
+				0A15796F2666761300DC041D /* TongTargetJumping.m in Sources */,
 				5D5D4B172665E0C8005B5D23 /* TongNotificationCenter.m in Sources */,
 				5D5D4B062664CEE3005B5D23 /* TongStudent.m in Sources */,
 				5D5D4AFC2664C6AE005B5D23 /* main.m in Sources */,
+				0A1579612666730B00DC041D /* TongJumpingViewController.m in Sources */,
+				0A15796B2666760400DC041D /* TongProtocolJumping.m in Sources */,
 				5D5D4B132665D285005B5D23 /* TongBasisManager.m in Sources */,
 				5D5D4AEE2664C6AA005B5D23 /* SceneDelegate.m in Sources */,
 				5D5D4B202666042A005B5D23 /* TongBasisViewController.m in Sources */,
@@ -412,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7G78L37X3;
 				INFOPLIST_FILE = "Tong- iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -430,6 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7G78L37X3;
 				INFOPLIST_FILE = "Tong- iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

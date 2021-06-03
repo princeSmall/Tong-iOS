@@ -57,10 +57,14 @@
 }
 
 - (void)urlSchemeJumping{
+    [TongUrlJumping openUrl:@"https://url" params:@{@"url":@"www.baidu.com",@"nav":self.navigationController}];
     NSLog(@"urlSchemeJumping");
 }
 
 - (void)protocolClassJumping{
+   UIViewController *viewController = [TongProtocolJumping jumpingViewControllerWithProtocol:@protocol(jumpingProtocol) withParams:@{@"url":@"https://www.baidu.com"}];
+    [self.navigationController pushViewController:viewController animated:YES];
+    
     NSLog(@"protocolClassJumping");
 }
 

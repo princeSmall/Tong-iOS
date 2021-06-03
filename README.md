@@ -81,3 +81,36 @@ KVC(Key-value coding）：
 1. 键值对编码，也就是我们可以通过变量的名称来读取或者修改它的值,而不需要调用明确的存取方法。这样就可以在运行时动态地访问和修改对象的属性。而不是在编译时确定。对于类里的私有属性，Objective-C是无法直接访问的，但是KVC是可以的。
 2. KVC+Runtime  字典转模型
 
+
+### 解耦跳转的三种方式
+
+1. Target-Aciton
+2. Protocol-Class
+3. Url-Jumping
+
+```
+⚠️：硬编码，通过runtime和反射获取跳转类和方法赋值
+
+- (void)targetActionJumping{
+    UIViewController *viewController = [TongTargetJumping targetViewController:@"https://www.baidu.com"];
+    [self.navigationController pushViewController:viewController animated:YES];
+    
+    NSLog(@"targetActionJumping");
+}
+
+⚠️：通过注册url实现跳转
+
+- (void)urlSchemeJumping{
+    [TongUrlJumping openUrl:@"https://url" params:@{@"url":@"www.baidu.com",@"nav":self.navigationController}];
+    NSLog(@"urlSchemeJumping");
+}
+
+⚠️：通过注册protocol实现跳转
+- (void)protocolClassJumping{
+   UIViewController *viewController = [TongProtocolJumping jumpingViewControllerWithProtocol:@protocol(jumpingProtocol) withParams:@{@"url":@"https://www.baidu.com"}];
+    [self.navigationController pushViewController:viewController animated:YES];
+    
+    NSLog(@"protocolClassJumping");
+}
+
+```

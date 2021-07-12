@@ -9,6 +9,7 @@
 #import "TongViewController.h"
 #import "TongBasisViewController.h"
 #import "TongJumpingViewController.h"
+#import "TongNetworkingManager.h"
 
 @interface ViewController ()
 
@@ -19,23 +20,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIBarButtonItem *barButton = [[UIBarButtonItem alloc]initWithTitle:@"Tong" style:UIBarButtonItemStyleDone target:self action:@selector(pushTongViewController)];
+    UIBarButtonItem *barButton = [[UIBarButtonItem alloc]initWithTitle:@"Tong" style:UIBarButtonItemStyleDone target:self action:@selector(checkupdate)];
     self.navigationItem.rightBarButtonItem = barButton;
+    
     // Do any additional setup after loading the view.
-    [self arrayComponentsJoin];
-    
-//    [self creatDirectoryPathWithDeploymentKey:@"9999999999" runningVersion:@"20.0"];
-    [self localFileSource:@"9999999999"];
+}
+- (void)checkupdate{
+    NSString *url = @"v0.1/public/codepush/update_check";
+    NSDictionary *parameter = @{
+        @"deployment_key":@"ZNc0XBzl86Nf4M13QYqV22Gmb7UhNLjtyMRgd",
+        @"app_version":@"1.1.0"
+    };
+    [TongNetworkingManager GET:url parameter:parameter success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseDictionary) {
+        NSLog(@"success--%@",responseDictionary);
+        } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+            NSLog(@"failure--%@",error);
+        }];
 }
 
-// test arrary componentsJoinedByString
-- (void)arrayComponentsJoin{
-    NSArray *locationId = @[@"location",@"loaction2"];
-    NSString *idString = [locationId componentsJoinedByString:@","];
-    NSLog(@"%@",idString);
+- (void)codepushServer{
+    NSString *url = @"v0.1/public/codepush/report_status/download";
+    NSDictionary *parameter = @{
+        @"deployment_key":@"ZNc0XBzl86Nf4M13QYqV22Gmb7UhNLjtyMRgd",
+        @"app_version":@"1.1.0"
+    };
+    [TongNetworkingManager POST:url parameter:parameter success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseDictionary) {
+        NSLog(@"success---%@",responseDictionary);
+    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        NSLog(@"failure---%@",error);
+    }];
     
 }
-
 // test file manager
 
 - (void)localFileSource:(NSString *)key{

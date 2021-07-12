@@ -1,0 +1,42 @@
+{
+  "name": "EcoCodePushDownloader",
+  "version": "0.1.2",
+  "summary": "A short description of EcoCodePushDownloader.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/eagleonefight/EcoCodePushDownloader",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "eagleonefight": "peng.w@ecovacs.com"
+  },
+  "source": {
+    "git": "https://github.com/eagleonefight/EcoCodePushDownloader.git",
+    "tag": "0.1.2"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": [
+    "EcoCodePushDownLoader/Classes/Downloader/*.{h,m}",
+    "EcoCodePushDownLoader/Classes/Model/*.{h,m}",
+    "EcoCodePushDownLoader/Classes/DownloaderProtocol/*.{h,m}",
+    "EcoCodePushDownLoader/Classes/DeploymentKeyInfoTool/*.{h,m}",
+    "EcoCodePushDownLoader/Classes/Manager/*.{h,m}"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "SSZipArchive": [
+
+    ],
+    "MJExtension": [
+
+    ],
+    "EcoTools": [
+
+    ]
+  }
+}

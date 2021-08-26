@@ -30,6 +30,7 @@
 		5D5D4B1D2666004C005B5D23 /* TongBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B1C2666004C005B5D23 /* TongBlock.m */; };
 		5D5D4B202666042A005B5D23 /* TongBasisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B1F2666042A005B5D23 /* TongBasisViewController.m */; };
 		5D5D4B2526663014005B5D23 /* TongKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B2426663014005B5D23 /* TongKVC.m */; };
+		5D992E5126A1508100B9797B /* TongCodePushDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D992E5026A1508100B9797B /* TongCodePushDownloader.m */; };
 		FE51FBC47328A7FCF2B61658 /* libPods-Tong- iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B54F2D876D86CF116B96B1 /* libPods-Tong- iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,8 @@
 		5D5D4B1F2666042A005B5D23 /* TongBasisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongBasisViewController.m; sourceTree = "<group>"; };
 		5D5D4B2326663014005B5D23 /* TongKVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongKVC.h; sourceTree = "<group>"; };
 		5D5D4B2426663014005B5D23 /* TongKVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongKVC.m; sourceTree = "<group>"; };
+		5D992E4F26A1508100B9797B /* TongCodePushDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongCodePushDownloader.h; sourceTree = "<group>"; };
+		5D992E5026A1508100B9797B /* TongCodePushDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongCodePushDownloader.m; sourceTree = "<group>"; };
 		A631C145D69B614E00C5756F /* Pods-Tong- iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tong- iOS.debug.xcconfig"; path = "Target Support Files/Pods-Tong- iOS/Pods-Tong- iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D9734A4F46C586E1FD4FEAB8 /* Pods-Tong- iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tong- iOS.release.xcconfig"; path = "Target Support Files/Pods-Tong- iOS/Pods-Tong- iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +174,8 @@
 			children = (
 				5D5382DA269C2BD9003B2CB2 /* TongNetworkingManager.h */,
 				5D5382DB269C2BD9003B2CB2 /* TongNetworkingManager.m */,
+				5D992E4F26A1508100B9797B /* TongCodePushDownloader.h */,
+				5D992E5026A1508100B9797B /* TongCodePushDownloader.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 				0A15796F2666761300DC041D /* TongTargetJumping.m in Sources */,
 				5D5D4B172665E0C8005B5D23 /* TongNotificationCenter.m in Sources */,
 				5D5D4B062664CEE3005B5D23 /* TongStudent.m in Sources */,
+				5D992E5126A1508100B9797B /* TongCodePushDownloader.m in Sources */,
 				5D5D4AFC2664C6AE005B5D23 /* main.m in Sources */,
 				0A1579612666730B00DC041D /* TongJumpingViewController.m in Sources */,
 				0A15796B2666760400DC041D /* TongProtocolJumping.m in Sources */,

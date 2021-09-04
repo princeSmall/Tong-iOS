@@ -12,6 +12,7 @@
 		0A15796B2666760400DC041D /* TongProtocolJumping.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A15796A2666760400DC041D /* TongProtocolJumping.m */; };
 		0A15796F2666761300DC041D /* TongTargetJumping.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A15796E2666761300DC041D /* TongTargetJumping.m */; };
 		0A1579732666762000DC041D /* TongUrlJumping.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1579722666762000DC041D /* TongUrlJumping.m */; };
+		0AD52D73266FB141002A6CE4 /* TongLeetCodeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD52D72266FB141002A6CE4 /* TongLeetCodeArray.m */; };
 		5D5D4AEB2664C6AA005B5D23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4AEA2664C6AA005B5D23 /* AppDelegate.m */; };
 		5D5D4AEE2664C6AA005B5D23 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4AED2664C6AA005B5D23 /* SceneDelegate.m */; };
 		5D5D4AF12664C6AA005B5D23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4AF02664C6AA005B5D23 /* ViewController.m */; };
@@ -40,6 +41,8 @@
 		0A15796E2666761300DC041D /* TongTargetJumping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongTargetJumping.m; sourceTree = "<group>"; };
 		0A1579712666762000DC041D /* TongUrlJumping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongUrlJumping.h; sourceTree = "<group>"; };
 		0A1579722666762000DC041D /* TongUrlJumping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongUrlJumping.m; sourceTree = "<group>"; };
+		0AD52D71266FB141002A6CE4 /* TongLeetCodeArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongLeetCodeArray.h; sourceTree = "<group>"; };
+		0AD52D72266FB141002A6CE4 /* TongLeetCodeArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongLeetCodeArray.m; sourceTree = "<group>"; };
 		5D5D4AE62664C6AA005B5D23 /* Tong- iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tong- iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5D4AE92664C6AA005B5D23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; usesTabs = 0; };
 		5D5D4AEA2664C6AA005B5D23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +127,15 @@
 			path = protocol_jumping;
 			sourceTree = "<group>";
 		};
+		0AD52D70266FB0F6002A6CE4 /* Leetcode-Array */ = {
+			isa = PBXGroup;
+			children = (
+				0AD52D71266FB141002A6CE4 /* TongLeetCodeArray.h */,
+				0AD52D72266FB141002A6CE4 /* TongLeetCodeArray.m */,
+			);
+			path = "Leetcode-Array";
+			sourceTree = "<group>";
+		};
 		5D5D4ADD2664C6AA005B5D23 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +155,7 @@
 		5D5D4AE82664C6AA005B5D23 /* Tong- iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0AD52D70266FB0F6002A6CE4 /* Leetcode-Array */,
 				0A15795B2666724200DC041D /* Jumping */,
 				5D5D4B102665D246005B5D23 /* Basis */,
 				5D5D4AE92664C6AA005B5D23 /* AppDelegate.h */,
@@ -316,6 +329,7 @@
 				5D5D4AF12664C6AA005B5D23 /* ViewController.m in Sources */,
 				5D5D4B1D2666004C005B5D23 /* TongBlock.m in Sources */,
 				5D5D4B1A2665FDD5005B5D23 /* TongViewController.m in Sources */,
+				0AD52D73266FB141002A6CE4 /* TongLeetCodeArray.m in Sources */,
 				5D5D4B092664CF28005B5D23 /* TongStudent+TongHigh.m in Sources */,
 				5D5D4AEB2664C6AA005B5D23 /* AppDelegate.m in Sources */,
 				0A1579732666762000DC041D /* TongUrlJumping.m in Sources */,

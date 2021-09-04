@@ -11,6 +11,7 @@
 @interface TongBasisViewController ()
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, assign) NSInteger age;
+@property (nonatomic, strong) TongBlock *tongBlock;
 
 @end
 
@@ -30,19 +31,20 @@
 
 // block
 - (void)commonBlock{
-    TongBlock *tongBlock = [[TongBlock alloc]init];
-    tongBlock.name = @"tong";
-    __weak typeof(tongBlock)weakTongBlock = tongBlock;
+//    TongBlock *tongBlock = [[TongBlock alloc]init];
+    self.tongBlock = [[TongBlock alloc]init];
+    _tongBlock.name = @"tong";
+    __weak typeof(_tongBlock)weakTongBlock = _tongBlock;
     
-    tongBlock.commonBlock = ^(NSString * _Nullable name, NSInteger age) {
+    _tongBlock.commonBlock = ^(NSString * _Nullable name, NSInteger age) {
         NSLog(@"%@",weakTongBlock.name);
         self.name = name;
     };
     
-    [tongBlock commonName:@"Tong" block:^(NSString * _Nullable name, NSInteger age) {
+    [_tongBlock commonName:@"Tong" block:^(NSString * _Nullable name, NSInteger age) {
         self.name = name;
         self.age = age;
-        NSLog(@"%@",tongBlock.name);
+        NSLog(@"%@",_tongBlock.name);
     }];
 }
 

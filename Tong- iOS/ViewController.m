@@ -25,8 +25,8 @@
 }
 
 - (void)pushTongViewController{
-    [self.navigationController pushViewController:[TongJumpingViewController new] animated:YES];
-//    [self.navigationController pushViewController:[TongBasisViewController new] animated:YES];
+//    [self.navigationController pushViewController:[TongJumpingViewController new] animated:YES];
+    [self.navigationController pushViewController:[TongBasisViewController new] animated:YES];
 //    [self.navigationController pushViewController:[TongViewController new] animated:YES];
 }
 

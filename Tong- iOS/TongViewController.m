@@ -18,10 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationAction:) name:@"Tong" object:nil];
     // Do any additional setup after loading the view.
 }
+
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];

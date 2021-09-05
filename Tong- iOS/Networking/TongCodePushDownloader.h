@@ -2,7 +2,7 @@
 //  TongCodePushDownloader.h
 //  Tong- iOS
 //
-//  Created by Tongle on 2021/7/16.
+//  Created by PrinceSmall on 2021/7/16.
 //
 
 #import <Foundation/Foundation.h>

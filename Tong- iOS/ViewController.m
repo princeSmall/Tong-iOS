@@ -2,7 +2,7 @@
 //  ViewController.m
 //  Tong- iOS
 //
-//  Created by Tongle on 2021/5/31.
+//  Created by PrinceSmall on 2021/5/31.
 //
 
 #import "ViewController.h"
@@ -100,7 +100,7 @@
 // test file manager
 
 - (void)localFileSource:(NSString *)key{
-    NSString *keyFile = @"/Users/tongle/Library/Developer/CoreSimulator/Devices/1C4B0A6A-BE7F-431D-88EB-DBF09CC5BAAF/data/Containers/Data/Application/A8A9F0A6-D76B-45B2-916C-71A72D57B222/Documents/AmmunitionDepot/hBJch866RcIfdJt-IwITYcPvItNOJwV-ZebU5";
+    NSString *keyFile = @"/Users/PrinceSmall/Library/Developer/CoreSimulator/Devices/1C4B0A6A-BE7F-431D-88EB-DBF09CC5BAAF/data/Containers/Data/Application/A8A9F0A6-D76B-45B2-916C-71A72D57B222/Documents/AmmunitionDepot/hBJch866RcIfdJt-IwITYcPvItNOJwV-ZebU5";
     NSArray *keyArray = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:keyFile error:nil];
     NSString *keyPath = [keyFile stringByAppendingPathComponent:keyArray.lastObject];
     

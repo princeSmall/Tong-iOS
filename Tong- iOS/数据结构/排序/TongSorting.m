@@ -38,9 +38,9 @@
 - (NSArray *)bubbleSort:(NSArray *)array{
     NSMutableArray *mArray = [NSMutableArray arrayWithArray:array];
     for (int i = 0 ; i < mArray.count; i ++) {
-        for (int j = i + 1; j < mArray.count; j++) {
-            NSInteger intI = [mArray[i] integerValue];
-            NSInteger intJ = [mArray[j] integerValue];
+        for (int j = 0; j < mArray.count - i - 1; j++) {
+            NSInteger intI = [mArray[j] integerValue];
+            NSInteger intJ = [mArray[j + 1] integerValue];
             if (intI > intJ) {
                 [mArray exchangeObjectAtIndex:i withObjectAtIndex:j];
             }

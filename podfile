@@ -3,5 +3,8 @@ platform :ios, '10.0'
 target 'Tong- iOS' do
 
 pod 'AFNetworking'
+pod 'SDWebImage'
+#pod 'A4LoadMeasure', configuration: ['Debug']
+
 
 end

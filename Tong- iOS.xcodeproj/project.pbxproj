@@ -31,8 +31,25 @@
 		5D5D4B202666042A005B5D23 /* TongBasisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B1F2666042A005B5D23 /* TongBasisViewController.m */; };
 		5D5D4B2526663014005B5D23 /* TongKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5D4B2426663014005B5D23 /* TongKVC.m */; };
 		5D992E5126A1508100B9797B /* TongCodePushDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D992E5026A1508100B9797B /* TongCodePushDownloader.m */; };
+		5DEA9E002786E28B00A4B85F /* TongSDImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEA9DFE2786E28B00A4B85F /* TongSDImageViewController.h */; };
+		5DEA9E012786E28B00A4B85F /* TongSDImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEA9DFF2786E28B00A4B85F /* TongSDImageViewController.m */; };
+		5DEA9E042786E2AC00A4B85F /* TongSDImageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEA9E022786E2AC00A4B85F /* TongSDImageCell.h */; };
+		5DEA9E052786E2AC00A4B85F /* TongSDImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEA9E032786E2AC00A4B85F /* TongSDImageCell.m */; };
 		FE51FBC47328A7FCF2B61658 /* libPods-Tong- iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B54F2D876D86CF116B96B1 /* libPods-Tong- iOS.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D8541422750CC0B00066AD4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A15795F2666730B00DC041D /* TongJumpingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongJumpingViewController.h; sourceTree = "<group>"; };
@@ -84,6 +101,10 @@
 		5D5D4B2426663014005B5D23 /* TongKVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongKVC.m; sourceTree = "<group>"; };
 		5D992E4F26A1508100B9797B /* TongCodePushDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongCodePushDownloader.h; sourceTree = "<group>"; };
 		5D992E5026A1508100B9797B /* TongCodePushDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongCodePushDownloader.m; sourceTree = "<group>"; };
+		5DEA9DFE2786E28B00A4B85F /* TongSDImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongSDImageViewController.h; sourceTree = "<group>"; };
+		5DEA9DFF2786E28B00A4B85F /* TongSDImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongSDImageViewController.m; sourceTree = "<group>"; };
+		5DEA9E022786E2AC00A4B85F /* TongSDImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TongSDImageCell.h; sourceTree = "<group>"; };
+		5DEA9E032786E2AC00A4B85F /* TongSDImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TongSDImageCell.m; sourceTree = "<group>"; };
 		A631C145D69B614E00C5756F /* Pods-Tong- iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tong- iOS.debug.xcconfig"; path = "Target Support Files/Pods-Tong- iOS/Pods-Tong- iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D9734A4F46C586E1FD4FEAB8 /* Pods-Tong- iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tong- iOS.release.xcconfig"; path = "Target Support Files/Pods-Tong- iOS/Pods-Tong- iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,6 +229,7 @@
 		5D5D4AE82664C6AA005B5D23 /* Tong- iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5DEA9DFD2786E26B00A4B85F /* SDImage */,
 				5D5382DD269C2BE2003B2CB2 /* Networking */,
 				5D42A33E2693FA800005F0ED /* 数据结构 */,
 				0A15795B2666724200DC041D /* Jumping */,
@@ -309,6 +331,17 @@
 			path = KVO;
 			sourceTree = "<group>";
 		};
+		5DEA9DFD2786E26B00A4B85F /* SDImage */ = {
+			isa = PBXGroup;
+			children = (
+				5DEA9DFE2786E28B00A4B85F /* TongSDImageViewController.h */,
+				5DEA9DFF2786E28B00A4B85F /* TongSDImageViewController.m */,
+				5DEA9E022786E2AC00A4B85F /* TongSDImageCell.h */,
+				5DEA9E032786E2AC00A4B85F /* TongSDImageCell.m */,
+			);
+			path = SDImage;
+			sourceTree = "<group>";
+		};
 		80A5CFDD7139D5C31942E4DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,15 +361,29 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5D8541362750CA1200066AD4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEA9E002786E28B00A4B85F /* TongSDImageViewController.h in Headers */,
+				5DEA9E042786E2AC00A4B85F /* TongSDImageCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		5D5D4AE52664C6AA005B5D23 /* Tong- iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D5D4AFF2664C6AE005B5D23 /* Build configuration list for PBXNativeTarget "Tong- iOS" */;
 			buildPhases = (
 				C84951A636F224C1D48A9EA0 /* [CP] Check Pods Manifest.lock */,
+				5D8541362750CA1200066AD4 /* Headers */,
 				5D5D4AE22664C6AA005B5D23 /* Sources */,
 				5D5D4AE32664C6AA005B5D23 /* Frameworks */,
 				5D5D4AE42664C6AA005B5D23 /* Resources */,
+				5D8541422750CC0B00066AD4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -422,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DEA9E052786E2AC00A4B85F /* TongSDImageCell.m in Sources */,
 				5D5D4B2526663014005B5D23 /* TongKVC.m in Sources */,
 				5D5D4AF12664C6AA005B5D23 /* ViewController.m in Sources */,
 				5D5D4B1D2666004C005B5D23 /* TongBlock.m in Sources */,
@@ -441,6 +489,7 @@
 				0A1579612666730B00DC041D /* TongJumpingViewController.m in Sources */,
 				0A15796B2666760400DC041D /* TongProtocolJumping.m in Sources */,
 				5D5D4B132665D285005B5D23 /* TongBasisManager.m in Sources */,
+				5DEA9E012786E28B00A4B85F /* TongSDImageViewController.m in Sources */,
 				5D5D4AEE2664C6AA005B5D23 /* SceneDelegate.m in Sources */,
 				5D5D4B202666042A005B5D23 /* TongBasisViewController.m in Sources */,
 			);
@@ -588,12 +637,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7G78L37X3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Tong- iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CFLAGS = (
+					"-DSERVER_IP",
+					"${SERVER_IP}",
+				);
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eco.Tong--iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -608,12 +666,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7G78L37X3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Tong- iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eco.Tong--iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -46,6 +46,7 @@
     
     NSLog(@"%ld", [[TongBasisManager shareManager].student getStudentSeatNumber:@"Tong"]);
     
+  
     [[TongBasisManager shareManager] getKVCValue];
 }
 

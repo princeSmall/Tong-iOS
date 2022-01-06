@@ -2,7 +2,7 @@
 //  TongNetworkingManager.m
 //  Tong- iOS
 //
-//  Created by Tongle on 2021/7/12.
+//  Created by PrinceSmall on 2021/7/12.
 //
 
 #import "TongNetworkingManager.h"

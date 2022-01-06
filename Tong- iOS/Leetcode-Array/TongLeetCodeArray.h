@@ -1,15 +1,15 @@
 //
-//  TongArray.h
+//  TongLeetCodeArray.h
 //  Tong- iOS
 //
-//  Created by PrinceSmall on 2021/7/12.
+//  Created by tong on 2021/6/8.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TongArray : NSObject
+@interface TongLeetCodeArray : NSObject
 
 @end
 
